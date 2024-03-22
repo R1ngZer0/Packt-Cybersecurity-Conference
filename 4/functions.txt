@@ -1,0 +1,2 @@
+get_command: Use this as the default function.
+general_message: Use this function for messages that start with //
