@@ -1,6 +1,6 @@
 import os
 import openai
-from openai import OpenAI # New import required for the updated API call
+from openai import OpenAI
 import docx
 from markdown import markdown
 from tqdm import tqdm
@@ -62,7 +62,7 @@ for i, section in tqdm(enumerate(sections, start=1), total=len(sections), leave=
     
     try:
         response = client.chat.completions.create( # Updated API call
-            model="gpt-4-1106-preview",
+            model="gpt-3.5-turbo",
             messages=messages,
             temperature=0.5,
         )
